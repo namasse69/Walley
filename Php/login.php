@@ -1,17 +1,24 @@
 <?php
 
-$name = $_GET['name'];
-$pass = $_GET['pass'];
 
-$host = "localhost";
-$login = "root";
-$password = "";
-$dbname = "walley";
+class dbConnect{
 
-	try{
-		$q = new PDO("mysql:host=".$host.";dbname=".$dbname."", $login, $password);
+	private $_name = $_GET['name'];
+	private $_pass = $_GET['pass'];
+	private $_dbConnect = null;
+	private $_host = "localhost";
+	private $_login = "root";
+	private $_$password = "";
+	private $_$dbname = "walley";
+	
+	function __construct(){
+		$_dbConnect = new PDO("mysql:host=".$host.";dbname=".$dbname."", $login, $password);
 		
-		$req = $q->prepare ('SELECT * FROM utilisateur  WHERE name =:name');
+	
+	}
+	
+	fuction GetUserByName($name){
+		$req = $db->prepare ('SELECT * FROM utilisateur  WHERE name =:name');
 
 		$req->execute(
 			array(
@@ -34,9 +41,11 @@ $dbname = "walley";
 
 				echo "mauvais identifiant";
 			}
-	}catch (PDOException $e)
-	{
-		echo "erreur".$e->getMessage();
 	}
+
+}
+
+ $db = new dbConnect();
+ $db->GetUserByName();
 
 ?>
