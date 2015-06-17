@@ -1,9 +1,16 @@
 #login
 {
 width : 300px;
-position : inline-block;
+position: absolute;
+left: 1200px;
+top: 60px;
 background-color : grey;
 border : 3px solid black;
 border  : radius;
 color : white;
+}
+
+body
+{
+background-image("image/sunset.jpg")
 }
