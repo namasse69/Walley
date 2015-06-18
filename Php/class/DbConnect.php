@@ -6,7 +6,7 @@ class dbConnect{
 	private $_host = "localhost";
 	private $_login = "root";
 	private $_password = "";
-	private $_dbname = "walley";
+	private $_dbname = "fdsfddfssdsf";
 	
 	function __construct()
 	{
@@ -14,9 +14,6 @@ class dbConnect{
 	}
 	
 	
-	/**
-	 * 
-	 */
 	function getHost(){
 		return $this->_host;
 	}
@@ -30,20 +27,19 @@ class dbConnect{
 	
 	function GetUserByName($name, $pass)
 	{
-		$req = $this->_dbConnect->prepare ('SELECT * FROM utilisateur  WHERE name =:name');
+		$req = $this->_dbConnect->prepare ('SELECT * FROM inscription  WHERE userMail =:Mail');
 
 		$req->execute(
 			array(
-					'name' => $name
+					'Mail' => $Mail
 				)
 			);
 			$response = $req->fetch();
-			var_dump($req);
 						
 			if ($response){
-						if ($response['pass'] == $pass)
+						if ($response['userPass'] == $Pass)
 						{
-							echo "Bienvenue ".$response['name'];
+							echo "Bienvenue ".$response['Mail'];
 							//header("Location: acceuil.php");
 							
 						}else{
@@ -56,4 +52,3 @@ class dbConnect{
 	}
 
 }
-
