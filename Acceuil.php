@@ -11,12 +11,11 @@
 	<title>Login</title>
 
 	<link rel="stylesheet" href="Css/acceuil.css" />
-	<link rel="stylesheet" href="Bootstrap/bootstrap.min.css" />
-	<link rel="stylesheet" href="Bootstrap/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="js/bootstrap/css/bootstrap-theme.min.css" />
 
-	<script src="Js/Jquery24.min.js" ></script>
-	<script src="Js/myjs.js" ></script>
-	<script src="Js/bootstrap.min.js" ></script>
+	<script src="Js/jquery-2.1.4.min.js" ></script>
+	<script src="js/bootstrap/js/bootstrap.min.js" ></script>
 	<!-- Bootstrap core CSS -->
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
@@ -43,25 +42,23 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Bootstrap</a>
+          <a class="navbar-brand" href="#">Storror</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Acceuil</a></li>
-            <li><a target="pie" class="menuButton">PieChart</a></li>
-            <li><a target="map" class="menuButton">Map</a></li>
+            <li><a target="pie" class="menuButton">Making off</a></li>
+            <li><a target="map" class="menuButton">Download</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
-
-    <div class="container">
 			
      <div id = "login">
 						<form action="Php/login.php" method="get">
-						  Username: <input type="text" name="name"><br>
-						  Pass: <input type="text" name="pass"><br>
-						  <input type="submit" value="connexion">
+						  Username: <input class="txt" type="text" name="name"><br>
+						  Pass:         <input class="txt" type="text" name="pass"><br>
+						  <input class="txt" type="submit" value="connexion">
 						</form> 
  
 		</div>
@@ -69,7 +66,19 @@
 
     </div><!-- /.container -->
 
-
+		<div id="blocPage">
+			<div class="article">
+			</div>
+			<div class="article">
+			</div>
+			<div class="article">
+			</div>
+			<div class="article">
+			</div>
+			<div class="article">
+			</div>
+			
+		</div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

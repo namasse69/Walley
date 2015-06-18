@@ -1,16 +1,44 @@
+
+
 #login
 {
-width : 300px;
-position: absolute;
-left: 1200px;
-top: 60px;
-background-color : grey;
-border : 3px solid black;
-border  : radius;
-color : white;
+   background-color: grey;
+    border: 3px solid black;
+    color: white;
+    left: 80%;
+    min-width: 300px;
+    position: fixed;
+    top: 60px;
+    width: 20%;
 }
+
+.txt
+{
+color : black;
+margin-bot : 10px;
+text-align : left;
+}
+.article {
+    background-color: white;
+    height: 400px;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+	border : 2px solid black;
+}
+
 
 body
 {
-background-image("image/sunset.jpg")
+background-image: url("../img/supertramp.jpg");
+background-repeat: font;
+background-position: center top;
+}
+
+/**/
+#blocPage{
+	height:100%;
+	width:100%;
+	margin-top: 200px;
 }
