@@ -56,8 +56,8 @@
 			
      <div id = "login">
 						<form action="Php/login.php" method="get">
-						  Username: <input class="txt" type="text" name="name"><br>
-						  Pass:         <input class="txt" type="text" name="pass"><br>
+						  Mail: <input class="txt" type="text" name="Mail"><br>
+						  Pass: <input class="txt" type="password" name="Pass"><br>
 						  <input class="txt" type="submit" value="connexion">
 						</form> 
  
